@@ -26,6 +26,8 @@
     --venia-text-spot: 255, 99, 51;
     --venia-warning-dark: 249, 93, 94;
     --venia-warning-light: 254, 229, 232;
+    --ampwa-default: 100,90,150;
+    --ampwa-active: 198,106,178;
 }
 
 html {

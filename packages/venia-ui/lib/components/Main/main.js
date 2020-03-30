@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { bool, shape, string } from 'prop-types';
 import { useScrollLock } from '@magento/peregrine';
 
@@ -6,6 +6,7 @@ import { mergeClasses } from '../../classify';
 import Footer from '../Footer';
 import Header from '../Header';
 import defaultClasses from './main.css';
+import AmastyColorTheme from "../AmastyColorTeme";
 
 const Main = props => {
     const { children, isMasked } = props;
@@ -21,6 +22,9 @@ const Main = props => {
             <Header />
             <div className={pageClass}>{children}</div>
             <Footer />
+            <Suspense fallback={null} >
+                <AmastyColorTheme />
+            </Suspense>
         </main>
     );
 };
