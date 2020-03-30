@@ -7,7 +7,10 @@ import { useProductFullDetail } from '@magento/peregrine/lib/talons/ProductFullD
 import { isProductConfigurable } from '@magento/peregrine/lib/util/isProductConfigurable';
 
 import Breadcrumbs from '../Breadcrumbs';
+import AmastyPromo from '../AmastyPromo';
 import Button from '../Button';
+import Icon from '../Icon';
+import { ShoppingCart as ShoppingCartIcon } from 'react-feather';
 import Carousel from '../ProductImageCarousel';
 import { fullPageLoadingIndicator } from '../LoadingIndicator';
 import Quantity from '../ProductQuantity';
@@ -70,12 +73,7 @@ const ProductFullDetail = props => {
                     <h1 className={classes.productName}>
                         {productDetails.name}
                     </h1>
-                    <p className={classes.productPrice}>
-                        <Price
-                            currencyCode={productDetails.price.currency}
-                            value={productDetails.price.value}
-                        />
-                    </p>
+
                 </section>
                 <section className={classes.imageCarousel}>
                     <Carousel images={mediaGalleryEntries} />
@@ -89,13 +87,29 @@ const ProductFullDetail = props => {
                     />
                 </section>
                 <section className={classes.cartActions}>
-                    <Button
-                        priority="high"
-                        onClick={handleAddToCart}
-                        disabled={isAddToCartDisabled}
-                    >
-                        Add to Cart
-                    </Button>
+                    <AmastyPromo
+                        title={'May the Force be with you'}
+                        productName={productDetails.name}
+                        price={productDetails.price.value}
+                        currencyCode={productDetails.price.currency}
+                        discount={25}
+                    />
+                    <p className={classes.productPrice}>
+                        <Price
+                            currencyCode={productDetails.price.currency}
+                            value={productDetails.price.value}
+                        />
+                    </p>
+                    <div className={classes.cartButton}>
+                        <Button
+                            priority="high"
+                            onClick={handleAddToCart}
+                            disabled={isAddToCartDisabled}
+                        >
+                            Buy product
+                            <Icon src={ShoppingCartIcon} size={16} />
+                        </Button>
+                    </div>
                 </section>
                 <section className={classes.description}>
                     <h2 className={classes.descriptionTitle}>
@@ -126,7 +140,8 @@ ProductFullDetail.propTypes = {
         quantity: string,
         quantityTitle: string,
         root: string,
-        title: string
+        title: string,
+        cartButton: string,
     }),
     product: shape({
         __typename: string,

@@ -1,0 +1,57 @@
+{
+  "RootCmp_CATEGORY__default.js": "/RootCmp_CATEGORY__default.6cc0218030d2236ac46e.js",
+  "RootCmp_CMS_PAGE__default.js": "/RootCmp_CMS_PAGE__default.a0ad112da205d8f793e4.js",
+  "RootCmp_NOTFOUND__default.js": "/RootCmp_NOTFOUND__default.f1ed94b34d49436c74bb.js",
+  "RootCmp_PRODUCT__default.js": "/RootCmp_PRODUCT__default.7c631903812a0dd4f4d1.js",
+  "RootCmp_SEARCH__default.js": "/RootCmp_SEARCH__default.fe705b77ae23428275ed.js",
+  "bestLogo.jpg": "/bestLogo-mLF.jpg",
+  "client.js": "/client.27dfba9d05f405c6f2e1.js",
+  "entrypoints": {
+    "client": {
+      "js": [
+        "/runtime.9109845d5ccc24907fdf.js",
+        "/vendors.d90036fb7bf0e5a2ec91.js",
+        "/client.27dfba9d05f405c6f2e1.js"
+      ]
+    }
+  },
+  "logo.svg": "/logo-2FT.svg",
+  "noProductsFound.png": "/noProductsFound-e9n.png",
+  "runtime.js": "/runtime.9109845d5ccc24907fdf.js",
+  "vendors.js": "/vendors.d90036fb7bf0e5a2ec91.js",
+  "vendors~RootCmp_CMS_PAGE__default.js": "/vendors~RootCmp_CMS_PAGE__default.3788c7900399163e549b.js",
+  "bundles": {
+    "load": [
+      "/runtime.9109845d5ccc24907fdf.js",
+      "/vendors.d90036fb7bf0e5a2ec91.js",
+      "/client.27dfba9d05f405c6f2e1.js"
+    ],
+    "prefetch": [
+      "/RootCmp_CATEGORY__default.6cc0218030d2236ac46e.js",
+      "/RootCmp_CMS_PAGE__default.a0ad112da205d8f793e4.js",
+      "/RootCmp_NOTFOUND__default.f1ed94b34d49436c74bb.js",
+      "/RootCmp_PRODUCT__default.7c631903812a0dd4f4d1.js",
+      "/RootCmp_SEARCH__default.fe705b77ae23428275ed.js"
+    ]
+  },
+  "js": {
+    "RootCmp_CATEGORY__default": "/RootCmp_CATEGORY__default.6cc0218030d2236ac46e.js",
+    "RootCmp_CMS_PAGE__default": "/RootCmp_CMS_PAGE__default.a0ad112da205d8f793e4.js",
+    "RootCmp_NOTFOUND__default": "/RootCmp_NOTFOUND__default.f1ed94b34d49436c74bb.js",
+    "RootCmp_PRODUCT__default": "/RootCmp_PRODUCT__default.7c631903812a0dd4f4d1.js",
+    "RootCmp_SEARCH__default": "/RootCmp_SEARCH__default.fe705b77ae23428275ed.js",
+    "client": "/client.27dfba9d05f405c6f2e1.js",
+    "runtime": "/runtime.9109845d5ccc24907fdf.js",
+    "vendors": "/vendors.d90036fb7bf0e5a2ec91.js",
+    "vendors~RootCmp_CMS_PAGE__default": "/vendors~RootCmp_CMS_PAGE__default.3788c7900399163e549b.js"
+  },
+  "jpg": {
+    "bestLogo": "/bestLogo-mLF.jpg"
+  },
+  "svg": {
+    "logo": "/logo-2FT.svg"
+  },
+  "png": {
+    "noProductsFound": "/noProductsFound-e9n.png"
+  }
+}

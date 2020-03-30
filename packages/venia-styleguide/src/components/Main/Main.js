@@ -11,7 +11,7 @@ const Main = () => {
                 <Route path="/page/:slug">
                     <Page />
                 </Route>
-                <Route>Home page</Route>
+                <Route>Home page 322</Route>
             </Switch>
         </main>
     );

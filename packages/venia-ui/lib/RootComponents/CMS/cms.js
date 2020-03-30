@@ -4,11 +4,14 @@ import cmsPageQuery from '../../queries/getCmsPage.graphql';
 import { fullPageLoadingIndicator } from '../../components/LoadingIndicator';
 import RichContent from '../../components/RichContent';
 import { number } from 'prop-types';
-import CategoryList from '../../components/CategoryList';
+// import CategoryList from '../../components/CategoryList';
 import { Meta } from '../../components/Head';
+import BestComponentEver from '../../components/bestComponentEver';
 
 const CMSPage = props => {
     const { id } = props;
+
+
     const { loading, error, data } = useQuery(cmsPageQuery, {
         variables: {
             id: Number(id),
@@ -37,7 +40,7 @@ const CMSPage = props => {
         ) {
             content = <RichContent html={data.cmsPage.content} />;
         } else {
-            content = <CategoryList title="Shop by category" id={2} />;
+            content = <BestComponentEver />;
         }
 
         return (
